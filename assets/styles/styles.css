@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url('../images/board.jpg');
+    background-position: center;
+    background-size: 112% 117%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.click p {
+    font-size: 40px;
+    color: white;
+}
+
+.hangman img {
+    height: 300px;
+    margin-top: 50px;
+}
+
+.hangman {
+    display: flex;
+    justify-content: center;
+}
+
+.section2 {
+    font-size: 35px;
+    color: white;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 85px;
+    margin-left: 85px;
+    margin-top: 53px;
+}
+
+.cities p {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.inputArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 127px;
+    margin-left: 65px;
+}
+
+.letters {
+    margin-left: 70px;
+    font-weight: bolder;
+    color: whitesmoke;
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: 30px;
+    border-bottom: dotted;
+    letter-spacing: 15px;
+    width: 300px;
+    border: none;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    margin-top: 98px;
+}

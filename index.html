@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+</head>
+
+<body>
+
+    <section class="section1">
+        <div class="content">
+            <h1 class="text">Hangman</h1>
+        </div>
+
+        <div class="click">
+            <p class="click_play">Play</p>
+        </div>
+
+        <div class="hangman">
+            <img class="hangman_image" src="./assets/images/hangman.png" alt="hangman">
+        </div>
+    </section>
+
+    
+    <section class="section2" style="display: none;">
+        <div class="head">
+            <h1>The Hangman</h1>
+            <h1 class="score">Score: <span class="myscore">0</span></h1>
+        </div>
+
+        <div class="cities">
+            <p>Cities of Azerbaijan</p>
+        </div>
+
+        <div class="inputArea">
+           <p>Guess the word</p>
+           <input class="letters" type="text" disabled>
+        </div>
+        
+        <div class="message"></div>
+    </section>
+
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
