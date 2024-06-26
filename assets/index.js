@@ -86,30 +86,6 @@ click.addEventListener('click', function () {
     body.style.backgroundSize = '112% 117%';
     body.style.backgroundAttachment = 'fixed';
 
-    // let randomIndex = Math.floor(Math.random() * cities.length)
-    // let randomWord = cities[randomIndex]
-    // // input.value = randomWord
-    // // console.log(randomWord);
-
-
-    // let underscores = '';
-    // for (let i = 0; i < randomWord.length; i++) {
-    //     if (randomWord[i] === ' ') {
-    //         underscores += ' '; // preserve spaces
-    //     } else {
-    //         underscores += '_'; // replace characters with underscores
-    //     }
-    //     if (i < randomWord.length - 1) {
-    //         underscores += ' '; // add space between underscores for better readability
-    //     }
-    // }
-
-    // // Display the underscores in the input field
-    // input.value = underscores;
-
-
-
-
 
     let randomWord = ''; // The randomly chosen city name.
     let displayWord = ''; //The current state of the word being displayed (with underscores).
@@ -137,29 +113,13 @@ click.addEventListener('click', function () {
     // Display the underscores in the input field
     input.value = displayWord;
 
-    
-    document.addEventListener('keydown', function (event) {
+    document.addEventListener('keydown', function () {
         const guess = event.key.toUpperCase();
+        console.log(guess);
         if (guess < 'A' || guess > 'Z') {
             return; // Ignore non-alphabet keys
         }
 
-    
-        let alreadyGuessed = false;
-        let guessedLetters = [];
-
-        for (let i = 0; i < guessedLetters.length; i++) {
-            if (guessedLetters[i] === guess) {
-                alreadyGuessed = true;
-                break;
-            }
-        }
-        if (alreadyGuessed) {
-            message.textContent = `You already guessed ${guess}.`;
-            return;
-        }
-
-        guessedLetters.push(guess);
 
         let correctGuess = false;
         let newDisplayWord = '';
