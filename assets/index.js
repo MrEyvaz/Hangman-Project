@@ -10,6 +10,8 @@ const input = document.querySelector('.letters')
 
 const message = document.querySelector('.message');
 
+const myScore = document.querySelector('.myscore')
+
 const cities = [
     'Aghdam',
     'Agdash',
@@ -113,7 +115,7 @@ click.addEventListener('click', function () {
     // Display the underscores in the input field
     input.value = displayWord;
 
-    document.addEventListener('keydown', function () {
+    document.addEventListener('keydown', function (event) {
         const guess = event.key.toUpperCase();
         console.log(guess);
         if (guess < 'A' || guess > 'Z') {
@@ -146,6 +148,9 @@ click.addEventListener('click', function () {
             }
             if (wordCompleted) {
                 message.textContent = 'Congratulations! You guessed the word!';
+                let currentScore = +myScore.textContent
+                currentScore++
+                myScore.textContent = currentScore.toString();
             }
         } else {
             attempts++;
@@ -158,4 +163,3 @@ click.addEventListener('click', function () {
         }
     })
 });
-
